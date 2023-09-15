@@ -1,14 +1,31 @@
-ul {
+nav ul {
 display: inline-flex;
 list-style-type: none;
-margin: 0px
+padding: 0px;
+margin: 0px;
 }
 
-li {
+nav li {
 border: 1px solid lightgray;
 background: lightgray;
 width: 250px;
-padding: 10px;
-margin: 10px;
+position: relative;
+padding-top: 10px;
+padding-bottom: 10px;
+margin: 0px;
 text-align: center;
+}
+
+nav ul li ul {
+    display: none;
+    list-style-type: none;
+    flex-direction: column;
+    position: absolute;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+nav ul li:hover ul{
+    display: flex;
 }
