@@ -1,8 +1,14 @@
-ul li {
-display: inline-block;
+ul {
+display: inline-flex;
 list-style-type: none;
+margin: 0px
+}
+
+li {
 border: 1px solid lightgray;
-background-color: lightgray;
+background: lightgray;
+width: 250px;
 padding: 10px;
-margin-left: 25px;
+margin: 10px;
+text-align: center;
 }
