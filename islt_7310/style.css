@@ -1,3 +1,4 @@
+/*Heading styles */
 h1 {
     color: #E07A5F;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -22,19 +23,71 @@ h4 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Nav text and links style */
 nav {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
 }
 
+#nav a:link {
+    color:#F4F1DE;
+}
+
+#nav a:active {
+    color:#F4F1DE;
+}
+
+#nav a:visited {
+    color:#F4F1DE;
+}
+
+/*Link styles for everything else besides Nav */
+
+a:link {
+    color:darkcyan;
+}
+
+a:active {
+    color:darkcyan;
+}
+
+a:visited {
+    color:darkcyan;
+}
+
+/* Body style */
 body {
     background-color: #F4F1DE;
     font-family: Arial, Helvetica, sans-serif; 
 }
 
+/* Main style */
 main {
     display: inline-block;
+    font-size: 14px;
 }
+
+#home-intro {
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+#home-hr {
+    height: 5px;
+    width: 100px;
+    background-color:#E07A5F;
+    border: 0px;
+}
+
+/* About page My pic */
+
+#about-rps {
+    border-radius: 100px;
+}
+
+/* Reflection page customization */
 
 #ref_firstpar::first-letter {
     initial-letter: 2;
@@ -55,3 +108,251 @@ main {
     text-indent: 50px;
 }
 
+/* Link and font/text style for Footer */
+
+ul#artifacts li a:active {
+    color:#52796F;
+}
+
+a#footerlink:link {
+    color:#52796F;
+}
+
+footer {
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-top: 200px;
+}
+
+/* Grid for About page */
+
+.wrapper-about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    column-gap: 10px;
+}
+
+.about-pic-text {
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+.about-video {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    padding: 50px 0;
+}
+
+/* Grid for timeline in Experience page */
+
+.wrapper-experience {
+    display: grid;
+    grid-template-columns: 1fr 5px 1fr;
+    height: auto;
+    column-gap: 25px;
+    max-width: fit-content;
+    border-top: 5px dashed #E07A5F;
+    border-bottom: 5px dashed #E07A5F;
+}
+
+h1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+nav {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#h4-work {
+    color:#F4F1DE;
+    font-size: medium;
+    padding: 20px 0;
+}
+
+.timeline-mid-1 {
+    color:#E07A5F;
+    background-color: #E07A5F;
+    font-size: xx-large;    
+    grid-column-start: 2;
+    grid-column-end: 2;
+    border-bottom: #E07A5F;
+    margin-top: 50px;
+}
+
+.timeline-left-1 {
+    color:#F4F1DE;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    text-align: right;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding-right: 10px;   
+    background-color: #E07A5F;
+    margin-right: -25px;
+    max-height: 125px; 
+    margin-top: 50px;   
+}
+
+.timeline-right-1 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    text-align: left;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.timeline-mid-2 {
+    color:#E07A5F;
+    background-color: #E07A5F;
+    font-size: xx-large;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+.timeline-left-2 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    text-align: right;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-color: #E07A5F;
+    margin-right: -25px;
+    padding-right: 10px;
+    max-height: 125px;
+    margin-left: 5px;
+}
+
+.timeline-right-2 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.timeline-mid-3 {
+    color:#E07A5F;
+    background-color: #E07A5F;
+    font-size: xx-large;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+.timeline-left-3 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    text-align: right;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-color: #E07A5F;
+    margin-right: -25px;
+    padding-right: 10px;
+    max-height: 125px;
+    margin-left: 5px;
+}
+
+.timeline-right-3 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.timeline-mid-4 {
+    color:#E07A5F;
+    background-color: #E07A5F;
+    font-size: xx-large;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+.timeline-left-4 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    text-align: right;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-color: #E07A5F;
+    margin-right: -25px;
+    padding-right: 10px;
+    max-height: 125px;
+    margin-left: 5px;
+}
+
+.timeline-right-4 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.timeline-mid-5 {
+    color:#E07A5F;
+    background-color: #E07A5F;
+    font-size: xx-large;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+.timeline-left-5 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    text-align: right;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-color: #E07A5F;
+    margin-right: -25px;
+    padding-right: 10px;
+    max-height: 125px;
+    margin-left: 5px;
+}
+
+.timeline-right-5 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+/* Code for blockquote in About Me page) */
+blockquote {
+    border: 2px solid lightgray;
+    background-color:#E07A5F;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#F4F1DE;
+    letter-spacing: 1px;
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 700px) {
+    #h4-work {
+        font-size: small;
+        margin-left: 5px;
+    }
+
+    .wrapper-about {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .about-pic-text {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+     
+    .RPS-video {
+        width: 50px;
+    }
+
+
+}
