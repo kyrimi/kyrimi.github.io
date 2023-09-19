@@ -1,19 +1,25 @@
 nav ul {
 display: inline-flex;
 list-style-type: none;
+column-gap: 5px;
 padding: 0px;
 margin: 0px;
+color: #FFFFFF;
+position: relative;
+flex-wrap:wrap;
 }
 
 nav li {
-border: 1px solid lightgray;
-background: lightgray;
-width: 250px;
+display: inline-block;
+border: 0px;
+background: #81B29A;
+width: 200px;
 position: relative;
 padding-top: 10px;
 padding-bottom: 10px;
 margin: 0px;
 text-align: center;
+color: #FFFFFF;
 }
 
 nav ul li ul {
@@ -24,8 +30,9 @@ nav ul li ul {
     padding-top: 10px;
     padding-bottom: 10px;
     margin: 0;
+    color: #FFFFFF;
 }
 
-nav ul li:hover ul{
+nav ul li:hover ul {
     display: flex;
 }
