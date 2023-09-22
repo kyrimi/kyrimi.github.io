@@ -333,6 +333,7 @@ blockquote {
     margin-top: 100px;
 }
 
+/*Responsive layout*/
 @media screen and (max-width: 700px) {
     #h4-work {
         font-size: small;
@@ -343,6 +344,7 @@ blockquote {
         display: grid;
         grid-template-columns: 1fr;
         height: auto;
+        max-width: 700px;
     }
 
     .about-pic-text {
@@ -354,5 +356,11 @@ blockquote {
         width: 50px;
     }
 
+    img {
+        max-width: 300px;
+    }
 
+    iframe {
+        max-width: 300px;
+    }
 }
