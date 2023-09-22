@@ -43,6 +43,10 @@ nav {
     color:#F4F1DE;
 }
 
+select {
+    display: none;
+}
+
 /*Link styles for everything else besides Nav */
 
 a:link {
@@ -335,6 +339,8 @@ blockquote {
 
 /*Responsive layout*/
 @media screen and (max-width: 700px) {
+
+
     #h4-work {
         font-size: small;
         margin-left: 5px;
@@ -363,4 +369,6 @@ blockquote {
     iframe {
         max-width: 300px;
     }
+
+    
 }
