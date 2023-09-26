@@ -1,8 +1,19 @@
+/*Font*/
+@font-face { 
+
+    font-family: Ruthligos;
+    
+    src: url("fonts/Ruthligos.ttf");
+    
+    }
+
 /*Heading styles */
 h1 {
     color: #E07A5F;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Ruthligos, script;
     letter-spacing: 2px;
+    text-indent: 20px;
+    font-size: 40px;
 }
 
 h2 {
@@ -85,6 +96,11 @@ main {
     border: 0px;
 }
 
+#about-education {
+    max-width: 500px;
+    text-align: center;
+}
+
 /* About page My pic */
 
 #about-rps {
@@ -137,15 +153,41 @@ footer {
     column-gap: 10px;
 }
 
-.about-pic-text {
+.wrapper-about .about-pic-text {
     grid-column-start: 2;
     grid-column-end: 2;
 }
 
-.about-video {
+.wrapper-about .about-video {
     grid-column-start: 1;
     grid-column-end: 1;
     padding: 50px 0;
+}
+
+.wrapper-about-edu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-top: 5px solid #E07A5F;
+    text-align: center;
+}
+
+.wrapper-about-edu .about-edu-BA {
+    grid-column-start: 1;
+    grid-column-end: 1;
+
+}
+
+.wrapper-about-edu .about-edu-GC {
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+.wrapper-about-edu .about-edu-MS {
+    grid-column-start: 3;
+    grid-column-end: 3;
 }
 
 /* Grid for timeline in Experience page */
@@ -339,8 +381,6 @@ blockquote {
 
 /*Responsive layout*/
 @media screen and (max-width: 700px) {
-
-
     #h4-work {
         font-size: small;
         margin-left: 5px;
@@ -353,22 +393,108 @@ blockquote {
         max-width: 700px;
     }
 
-    .about-pic-text {
+    .wrapper-about .about-pic-text {
         grid-column-start: 1;
         grid-column-end: 1;
     }
      
-    .RPS-video {
+    .wrapper-about .RPS-video {
         width: 50px;
     }
 
-    img {
+    img .home-rps-banner {
         max-width: 300px;
     }
 
     iframe {
         max-width: 300px;
+    } 
+
+    #ref_firstpar::first-letter {
+        initial-letter: 3;
+        padding-right: 10px;
+        color:#E07A5F;
+        font-weight: bolder;
     }
 
+    .wrapper-about-edu {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+        text-align: center;
+    }
     
+    .wrapper-about-edu .about-edu-BA {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    
+    }
+    
+    .wrapper-about-edu .about-edu-GC {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+    
+    .wrapper-about-edu .about-edu-MS {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
 }
+
+/*Print Query*/
+@media print {
+    nav, iframe {
+        display: none;
+    }  
+
+    h1, h2, h3, #h4-work, p, blockquote, a:link {
+        color: black;
+    }
+
+    h1 {
+        font-size: xx-large;
+    }
+
+    h2 {
+        font-size: small;
+    }
+
+    body {
+        margin: 1in 1in 1in 1in;
+    }
+
+    blockquote {
+        margin-top: 0px;
+    }
+
+    .wrapper-about {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+        max-width: 700px;
+        column-gap: 10px;
+    }
+
+    main {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        font-size: 12px;
+    }
+
+    #artifacts a:link {
+        color: black;
+    }
+
+    #home-rps-banner {
+        max-width: 500px;
+    }
+
+    footer {
+        margin-top: 0px;
+    }
+
+    footer #footerlink {
+        color: black;
+    }
+}
+
