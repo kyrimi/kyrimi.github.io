@@ -379,6 +379,36 @@ blockquote {
     margin-top: 100px;
 }
 
+/*Footer design and footer img animation*/
+footer .footer-main {
+    background-image: url(images/RPS-banner-footer.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    text-align: right;
+    height: 100px;
+}
+
+.footer-mainlink {
+    color: black;
+}
+
+.footer-credits {
+    font-size: 8px;
+}
+
+footer img:hover {
+    animation-name: enlarge;
+    position: relative;
+    animation-duration: 0.5s;
+    transition:ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    transform: scale(1.25, 1.25);
+}
+
+
 /*Responsive layout*/
 @media screen and (max-width: 700px) {
     #h4-work {
@@ -445,25 +475,6 @@ blockquote {
         bottom: 5%;
         right: 5%;   
     }
-}
-
-/*Footer design*/
-footer .footer-main {
-    background-image: url(images/RPS-banner-footer.png);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: black;
-    text-align: right;
-    height: 100px;
-}
-
-.footer-mainlink {
-    color: black;
-}
-
-.footer-credits {
-    font-size: 8px;
 }
 
 /*Print Query*/
