@@ -190,6 +190,11 @@ footer {
     grid-column-end: 3;
 }
 
+#footer-main-text {
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+
 /* Grid for timeline in Experience page */
 
 .wrapper-experience {
@@ -432,10 +437,6 @@ footer img:hover {
         width: 50px;
     }
 
-    img .home-rps-banner {
-        max-width: 300px;
-    }
-
     iframe {
         max-width: 300px;
     } 
@@ -470,11 +471,21 @@ footer img:hover {
         grid-column-end: 1;
     }
 
-    #footer-main-text {
-        position: absolute;
-        bottom: 5%;
-        right: 5%;   
+    footer .footer-main {
+        background-image: none;
     }
+
+    #footer-main-text {
+        position: relative;
+        color: black; 
+        background-color: white;  
+    }
+
+    #footer-main-text a:link {
+        color: black;
+        background-color: white ;
+    }
+
 }
 
 /*Print Query*/
