@@ -413,6 +413,29 @@ footer img:hover {
     transform: scale(1.25, 1.25);
 }
 
+/*Form layout and format*/
+
+.main-contact {
+    display: grid;
+    grid-template-columns: 1fr 100px 1fr;
+    height: auto;
+    column-gap: 25px;
+    max-width: fit-content;
+}
+
+form label {
+    color:#2F3E46;
+}
+
+form input {
+    border: 1px dashed #354F52;
+    background-color: whitesmoke;
+}
+
+form textarea {
+    border: 1px dashed #354F52;
+    background-color: whitesmoke;
+}
 
 /*Responsive layout*/
 @media screen and (max-width: 700px) {
@@ -484,6 +507,18 @@ footer img:hover {
     #footer-main-text a:link {
         color: black;
         background-color: white ;
+    }
+
+    .main-contact {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+        max-width: fit-content;
+    }
+
+    form {
+        grid-column-start: 1;
+        grid-column-end: 1;
     }
 
 }

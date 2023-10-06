@@ -37,8 +37,6 @@ nav ul li:hover ul {
     display: flex;
 }
 
-
-
 @media screen and (max-width: 700px) {
 
     nav {
